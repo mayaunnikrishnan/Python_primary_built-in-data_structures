@@ -100,3 +100,203 @@ A tuple in Python is an ordered, immutable collection of items, which can hold a
 - not in: Checks if a specified element is not present in the tuple, returning True if it is not and False otherwise.
 
 These methods and operations allow you to work with tuples effectively, despite their immutability, providing useful ways to access, analyze, and manipulate tuple data in Python.
+
+## Set in python
+
+A set in Python is an unordered collection of unique elements. Sets are commonly used to perform mathematical operations like union, intersection, difference, and symmetric difference. Key characteristics of sets include uniqueness of elements and unordered storage.
+
+- Set Creation: 
+Sets can be created using curly braces `{}` or the `set()` function. Duplicate elements are automatically removed, and the resulting set contains only unique elements.
+
+- Add: The `add()` method adds a single element to a set. If the element is already present, the set remains unchanged.
+
+- Remove: The `remove()` method removes a specified element from the set. If the element is not found, a KeyError is raised.
+
+- Discard: Similar to `remove()`, but does not raise an error if the element is not present in the set.
+
+- Pop: Removes and returns an arbitrary element from the set. This method is useful when the specific element to remove is not important.
+
+- Clear: Removes all elements from the set, leaving an empty set.
+
+### Set Operations
+Sets support various operations to manipulate their contents efficiently:
+
+- Union: Combines elements from two or more sets, ensuring uniqueness of elements in the resulting set.
+
+- Update: Adds elements from another set or iterable to the current set.
+
+- Intersection: Finds elements common to two or more sets.
+
+- Intersection Update: Updates the set, retaining only elements found in both the set and other sets.
+
+- Difference: Finds elements present in one set but not in another.
+
+- Difference Update: Updates the set, removing elements found in other sets.
+
+- Symmetric Difference: Finds elements present in either set, but not in both.
+
+- Symmetric Difference Update: Updates the set, keeping only elements found in either set, but not in both.
+
+### Subset and Superset Checks
+Sets can be compared to check for containment:
+
+- Issubset: Checks if one set is contained within another set. Returns True if all elements of the first set are present in the second set.
+
+- Issuperset: Checks if one set contains all elements of another set. Returns True if the first set contains all elements of the second set.
+
+These operations are handy for verifying relationships between sets, such as whether one set is a subset or superset of another. They provide useful functionality for set comparison and analysis.
+
+## String in Python
+A string in Python is a sequence of characters enclosed within single quotes `(' ')`, double quotes` (" ")`, or triple quotes `(''' ''' or """ """)`. Strings are immutable, meaning their contents cannot be changed after they are created. They are used to store and manipulate text.
+
+### String Functions
+- `len()`:
+
+Returns the length of a string, i.e., the number of characters it contains.
+- `str.lower()`:
+
+Converts all uppercase characters in a string to lowercase.
+- `str.upper()`:
+
+Converts all lowercase characters in a string to uppercase.
+- `str.strip()`:
+
+Removes leading and trailing whitespace from a string.
+- `str.replace(old, new)`:
+
+Replaces all occurrences of the substring old with the substring new in a string.
+- `str.split(separator)`:
+
+Splits a string into a list of substrings based on the specified separator. If no separator is specified, it splits by whitespace.
+- `str.join(iterable)`:
+
+Joins the elements of an iterable (e.g., list or tuple) into a single string, with the string acting as a separator.
+- `str.find(sub)`:
+
+Returns the lowest index of the substring sub if it is found in the string. Returns -1 if the substring is not found.
+- `str.startswith(prefix)`:
+
+Returns True if the string starts with the specified prefix, otherwise returns False.
+- `str.endswith(suffix)`:
+
+Returns True if the string ends with the specified suffix, otherwise returns False.
+### String Check Methods
+- `str.isnumeric()`:
+
+Returns True if all characters in the string are numeric characters.
+- `str.isdigit()`:
+
+Returns True if all characters in the string are digits.
+- `str.isdecimal()`:
+
+Returns True if all characters in the string are decimal characters.
+- `str.isalpha()`:
+
+Returns True if all characters in the string are alphabetic characters.
+- `str.isalnum()`:
+
+Returns True if all characters in the string are alphanumeric (either letters or numbers).
+- `str.isspace()`:
+
+Returns True if all characters in the string are whitespace characters.
+- `str.islower()`:
+
+Returns True if all cased characters in the string are lowercase.
+- `str.isupper()`:
+
+Returns True if all cased characters in the string are uppercase.
+- `str.istitle()`:
+
+Returns True if the string is titlecased, meaning each word starts with an uppercase letter followed by lowercase letters.
+- `str.isidentifier()`:
+
+Returns True if the string is a valid Python identifier, which can be used as a variable name.
+
+
+## Dictionary in Python
+A dictionary in Python is an unordered, mutable collection of key-value pairs. Keys must be unique and immutable, while values can be of any data type.
+
+- Creating a Dictionary : 
+  Dictionaries can be created using curly braces `{}` with key-value pairs or by using the `dict()` constructor.
+
+- Accessing Values : 
+  Values are accessed using their corresponding keys placed inside square brackets.
+
+- Adding or Modifying Key-Value Pairs : 
+  New key-value pairs can be added, and existing values can be modified by assigning a value to a key.
+
+- del Statement : 
+  The del statement deletes a specific key-value pair from the dictionary using the key.
+
+- `pop()` Method : 
+  The `pop()` method removes a key-value pair and returns the value associated with the specified key.
+
+- Checking Key Existence : 
+  The in keyword checks if a key exists in the dictionary, returning True if present and False otherwise.
+
+- Keys, Values, Items : 
+    - `keys()`: Returns a view object with all keys in the dictionary.
+    - `values()`: Returns a view object with all values in the dictionary.
+    - `items()`: Returns a view object with all key-value pairs as tuples.
+- Copying a Dictionary : 
+  The `copy()` method creates a shallow copy of the dictionary.
+
+- Clearing a Dictionary : 
+  The `clear()` method removes all key-value pairs from the dictionary.
+
+- Getting a Value with Default : 
+  The `get()` method retrieves the value for a specified key, returning a default value if the key is not found.
+
+- Updating a Dictionary : 
+  The `update()` method updates the dictionary with key-value pairs from another dictionary or an iterable of key-value pairs.
+
+- Dictionary Size : 
+  The `len()` function returns the number of key-value pairs in the dictionary.
+
+- Converting Lists to Dictionaries : 
+  Lists can be converted to dictionaries using the `zip()` function to pair elements as key-value pairs or by using dictionary comprehensions.
+
+
+  ## Type Conversion in Python
+Type conversion, or type casting, is the process of converting a value from one data type to another. Python provides built-in functions for explicit type conversion.
+
+- Float to Integer :: 
+`int()`: Converts a float to an integer by truncating the decimal part.
+- String to Integer :: 
+`int()`: Converts a string representation of a number to an integer. The string must contain a valid integer representation.
+- Integer to Float :: 
+`float()`: Converts an integer to a float.
+- String to Float :: 
+`float()`: Converts a string representation of a number to a float. The string must contain a valid float representation.
+- Integer to String :: 
+`str()`: Converts an integer to a string.
+- Float to String :: 
+`str()`: Converts a float to a string.
+- Integer to Boolean :: 
+`bool()`: Converts an integer to a boolean. Zero is converted to False, and any non-zero integer is converted to True.
+- String to Boolean :: 
+`bool()`: Converts a string to a boolean. An empty string is converted to False, while any non-empty string is converted to True.
+- Tuple to List :: 
+`list()`: Converts a tuple to a list.
+- String to List :: 
+`list()`: Converts a string to a list of characters.
+- Set to List :: 
+`list()`: Converts a set to a list.
+- List to Tuple :: 
+`tuple()`: Converts a list to a tuple.
+- String to Tuple :: 
+`tuple()`: Converts a string to a tuple of characters.
+- Set to Tuple :: 
+`tuple()`: Converts a set to a tuple.
+- List to Set :: 
+  `set()`: Converts a list to a set, removing duplicate elements.
+- Tuple to Set :: 
+`set()`: Converts a tuple to a set, removing duplicate elements.
+- String to Set :: 
+`set()`: Converts a string to a set of characters, removing duplicates.
+- List to String :: 
+`join()`: Converts a list of strings to a single string by concatenating the list elements with a specified separator.
+- Tuple to String :: 
+`join()`: Converts a tuple of strings to a single string by concatenating the tuple elements with a specified separator.
+- Set to String :: 
+`join()`: Converts a set of strings to a single string by concatenating the set elements with a specified separator. The order of elements in the resulting string is arbitrary due to the unordered nature of sets.
