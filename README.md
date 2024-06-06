@@ -259,44 +259,67 @@ A dictionary in Python is an unordered, mutable collection of key-value pairs. K
 
   ## Type Conversion in Python
 Type conversion, or type casting, is the process of converting a value from one data type to another. Python provides built-in functions for explicit type conversion.
+### Type conversion methods within the same data types in Python:
 
 - Float to Integer :: 
 `int()`: Converts a float to an integer by truncating the decimal part.
+
 - String to Integer :: 
 `int()`: Converts a string representation of a number to an integer. The string must contain a valid integer representation.
+
 - Integer to Float :: 
 `float()`: Converts an integer to a float.
+
 - String to Float :: 
 `float()`: Converts a string representation of a number to a float. The string must contain a valid float representation.
+
+### Type conversion methods within different data structures in Python:
+
 - Integer to String :: 
 `str()`: Converts an integer to a string.
+
 - Float to String :: 
 `str()`: Converts a float to a string.
+
 - Integer to Boolean :: 
 `bool()`: Converts an integer to a boolean. Zero is converted to False, and any non-zero integer is converted to True.
+
 - String to Boolean :: 
 `bool()`: Converts a string to a boolean. An empty string is converted to False, while any non-empty string is converted to True.
+
 - Tuple to List :: 
 `list()`: Converts a tuple to a list.
+
 - String to List :: 
 `list()`: Converts a string to a list of characters.
+
 - Set to List :: 
 `list()`: Converts a set to a list.
+
 - List to Tuple :: 
 `tuple()`: Converts a list to a tuple.
+
 - String to Tuple :: 
 `tuple()`: Converts a string to a tuple of characters.
+
 - Set to Tuple :: 
 `tuple()`: Converts a set to a tuple.
+
 - List to Set :: 
   `set()`: Converts a list to a set, removing duplicate elements.
+  
 - Tuple to Set :: 
 `set()`: Converts a tuple to a set, removing duplicate elements.
+
 - String to Set :: 
 `set()`: Converts a string to a set of characters, removing duplicates.
+
 - List to String :: 
 `join()`: Converts a list of strings to a single string by concatenating the list elements with a specified separator.
+
 - Tuple to String :: 
 `join()`: Converts a tuple of strings to a single string by concatenating the tuple elements with a specified separator.
+
 - Set to String :: 
 `join()`: Converts a set of strings to a single string by concatenating the set elements with a specified separator. The order of elements in the resulting string is arbitrary due to the unordered nature of sets.
+
