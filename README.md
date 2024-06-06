@@ -1,6 +1,18 @@
 # Python_primary_built-in-data_structures
 Python Built-In Data Structures Tutorial for Absolute Beginners
 
+# Table of Contents
+
+1. [Numbers in Python](#numbers-in-python)
+2. [Arithmetic Operators in Python](#arithmetic-operators-in-python)
+3. [Lists in Python](#lists-in-python)
+4. [Tuples in Python](#tuples-in-python)
+5. [Set in Python](#set-in-python)
+6. [String in Python](#string-in-python)
+7. [Dictionary in Python](#dictionary-in-python)
+8. [Type Conversion in Python](#type-conversion-in-python)
+9. [String Formatting Methods in Python](#string-formatting-methods-in-python)
+
 ## Numbers in Python
 In Python, numbers are a fundamental data type and can be categorized into several types:
 
@@ -257,7 +269,7 @@ A dictionary in Python is an unordered, mutable collection of key-value pairs. K
   Lists can be converted to dictionaries using the `zip()` function to pair elements as key-value pairs or by using dictionary comprehensions.
 
 
-  ## Type Conversion in Python
+## Type Conversion in Python
 Type conversion, or type casting, is the process of converting a value from one data type to another. Python provides built-in functions for explicit type conversion.
 ### Type conversion methods within the same data types in Python:
 
@@ -322,4 +334,23 @@ Type conversion, or type casting, is the process of converting a value from one 
 
 - Set to String :: 
 `join()`: Converts a set of strings to a single string by concatenating the set elements with a specified separator. The order of elements in the resulting string is arbitrary due to the unordered nature of sets.
+
+## String Formatting Methods in Python
+String formatting in Python is the process of creating a new string by inserting values into a predefined string structure. 
+Python provides several methods to achieve this:
+
+- String Concatenation : 
+String concatenation involves combining multiple strings into one using the `+ operator`. It is a simple method where strings are directly joined together.
+
+- `%-Formatting` : 
+`%-Formatting`, also known as printf-style formatting, uses the % operator to format strings. Placeholders in the string are marked with a % followed by a format specifier (like %s for strings or %d for integers), which are then replaced by corresponding values.
+
+- `str.format()` : 
+The `str.format() `method allows for more powerful and flexible string formatting. Curly braces {} are used as placeholders within the string, which are replaced by the values passed to the format() method. This method supports various formatting options, such as alignment, padding, and number formatting.
+
+- `f-Strings` : 
+`f-Strings`, introduced in Python 3.6, provide a concise and readable way to embed expressions inside string literals. An f-String is prefixed with an f or F and uses curly braces` {} `to evaluate expressions, including variables and function calls, directly within the string.
+
+- `format()` Function : 
+The `format()` function can be used for advanced string formatting. This function is particularly useful for formatting numerical values, such as setting decimal precision or aligning numbers. It can be used to format individual values and is often utilized in conjunction with f-Strings or the `str.format()` method.
 
